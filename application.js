@@ -20,6 +20,7 @@ $.digdog = {
 $.renderHelper = {
   frame: 0,
   start: Date.now(),
+  fps: 30,
   requestAnimFrame: (
     window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
@@ -27,7 +28,7 @@ $.renderHelper = {
     window.oRequestAnimationFrame ||
     window.msRequestAnimationFrame ||
     function(callback) {
-      window.setTimeout(callback, 1000 / 60);
+      window.setTimeout(callback, 1000 / $.renderHelper.fps);
     }
   ),
   loop: function(proc) {
