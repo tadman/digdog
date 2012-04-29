@@ -9,9 +9,21 @@ body
 
 #status
 {
-  padding-top: 10px;
   font-weight: bold;
   font-size: 10px;
+  float: left;
+}
+
+#frame
+{
+  font-size: 10px;
+  float: right;
+}
+
+#info
+{
+  padding-top: 10px;
+  width: 400px;
 }
 
 canvas#game
