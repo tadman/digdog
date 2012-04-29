@@ -1,0 +1,23 @@
+body
+{
+  padding: 0;
+  margin: 0;
+  background: #EFEFEF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+#status
+{
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+canvas#game
+{
+  width: 400px;
+  height: 320px;
+  border: 2px solid #CFCFCF;
+  background: #FFFFFF;
+}
